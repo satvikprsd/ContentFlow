@@ -60,6 +60,8 @@ A comprehensive admin portal for content marketing agencies built with Vite, Rea
 
 ## Getting Started
 
+### Hosted Demo Link [content-flow-mauve.vercel.app](https://content-flow-mauve.vercel.app)
+
 ### Prerequisites
 - Node.js 18+ 
 - npm or yarn
