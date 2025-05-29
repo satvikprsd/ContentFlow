@@ -200,7 +200,7 @@ export default function ProjectsPage() {
             <CardDescription>All active and completed projects</CardDescription>
           </CardHeader>
           <CardContent>
-          <div className="overflow-y-auto max-h-[500px]">
+          <div className="overflow-y-auto max-h-[400px]">
             <Table>
               <TableHeader>
                 <TableRow>

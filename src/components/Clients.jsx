@@ -149,7 +149,7 @@ export default function ClientsPage() {
             <CardDescription>All clients managed by your agency</CardDescription>
           </CardHeader>
           <CardContent>
-          <div className="overflow-y-auto max-h-[500px]">
+          <div className="overflow-y-auto max-h-[400px]">
             <Table>
               <TableHeader>
                 <TableRow>
