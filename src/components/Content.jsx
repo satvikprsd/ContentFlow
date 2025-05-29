@@ -323,7 +323,7 @@ export default function ContentPage() {
         </Tabs>
 
         <Dialog open={isViewDialogOpen} onOpenChange={setIsViewDialogOpen}>
-          <DialogContent className="sm:max-w-[700px]">
+          <DialogContent className="sm:max-w-[700px] text-foreground">
             <DialogHeader>
               <DialogTitle>{viewingContent?.title}</DialogTitle>
               <DialogDescription>
