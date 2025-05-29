@@ -248,6 +248,7 @@ export default function ContentPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
+                  <div className="overflow-y-auto max-h-[200px]">
                   <Table>
                     <TableHeader>
                       <TableRow>
@@ -316,6 +317,7 @@ export default function ContentPage() {
                         ))}
                     </TableBody>
                   </Table>
+                  </div>
                 </CardContent>
               </Card>
             </TabsContent>

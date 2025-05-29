@@ -386,6 +386,7 @@ export default function TasksPage() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
+                <div className="overflow-y-auto max-h-[200px]">
                   <Table>
                     <TableHeader>
                       <TableRow>
@@ -399,7 +400,7 @@ export default function TasksPage() {
                         <TableHead>Actions</TableHead>
                       </TableRow>
                     </TableHeader>
-                    <TableBody>
+                      <TableBody>
                       {filteredTasks
                         .filter((task) => {
                           if (status === "all") return true
@@ -459,6 +460,7 @@ export default function TasksPage() {
                         ))}
                     </TableBody>
                   </Table>
+                </div>
                 </CardContent>
               </Card>
             </TabsContent>

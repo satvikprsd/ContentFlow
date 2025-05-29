@@ -93,11 +93,11 @@ export function Layout({ children }) {
           </div>
         </div>
         <div className={`w-full p-5 h-screen ${theme=='dark' ? 'bg-[#0b0c0e]' : 'bg-[#ecf0f5]'}`}>
-          <div className="rounded-4xl shadow-[0_0_8px_rgba(0,0,0,0.1)] shadow-foreground h-full bg-background pt-2">
+          <div className="rounded-4xl shadow-[0_0_8px_rgba(0,0,0,0.1)] shadow-foreground h-full bg-background pt-2 flex flex-col overflow-hidden">
             <div className="rounded-t-4xl sticky top-0 z-40 flex h-16 items-center gap-x-4 border-b bg-background px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
               <div className="flex flex-col gap-1">
                 <h1 className="font-bold text-foreground text-xl">Hey, {user.name}!</h1>
-                <h1 className="text-foreground text-sm">{formatted}</h1>
+                <h1 className="text-foreground text-sm hidden sm:block">{formatted}</h1>
               </div>
               <Button variant="ghost" size="sm" className="lg:hidden text-foreground" onClick={() => setSidebarOpen(true)}>
                 <Menu className="h-4 w-4" />
@@ -134,7 +134,7 @@ export function Layout({ children }) {
                 </div>
               </div>
             </div>
-            <main className="py-5">
+            <main className="py-5 overflow-y-auto flex-1">
               <div className="px-4 sm:px-6 lg:px-8">{children}</div>
             </main>
           </div>

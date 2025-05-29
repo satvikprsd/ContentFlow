@@ -172,6 +172,7 @@ export default function SettingsPage() {
                 </div>
               </CardHeader>
               <CardContent>
+                <div className="overflow-y-auto max-h-[500px]">
                 <Table>
                   <TableHeader>
                     <TableRow>
@@ -213,6 +214,7 @@ export default function SettingsPage() {
                     ))}
                   </TableBody>
                 </Table>
+                </div>
               </CardContent>
             </Card>
           </TabsContent>

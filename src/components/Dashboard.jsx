@@ -222,12 +222,12 @@ export default function Dashboard() {
 
           <TabsContent value="overview" className="space-y-4">
             <div className="grid gap-4 md:grid-cols-2">
-              <Card>
+              <Card className="w-[100%]">
                 <CardHeader>
                   <CardTitle>Project Status Distribution</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <ChartContainer className="h-[200px]" config={{pending: { label: "Pending", color: "#fbbf24" },inProgress: { label: "In Progress", color: "#3b82f6" },completed: { label: "Completed", color: "#10b981" },}}>
+                <CardContent className="flex items-center justify-center">
+                  <ChartContainer className="w-[100%] h-[150%]" config={{pending: { label: "Pending", color: "#fbbf24" },inProgress: { label: "In Progress", color: "#3b82f6" },completed: { label: "Completed", color: "#10b981" },}}>
                     <ResponsiveContainer width="100%" height="100%">
                       <PieChart>
                         <Pie data={projectData} cx="50%" cy="50%" innerRadius={40} outerRadius={80} dataKey="value">
@@ -242,12 +242,12 @@ export default function Dashboard() {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card className="w-[100%]">
                 <CardHeader>
                   <CardTitle>Content by Type</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <ChartContainer config={{ count: { label: "Count", color: "#3b82f6" },}} className="h-[200px]">
+                <CardContent className="">
+                  <ChartContainer config={{ count: { label: "Count", color: "#3b82f6" },}} className="h-[100%] w-[100%]">
                     <ResponsiveContainer width="100%" height="100%">
                       <BarChart data={contentData}>
                         <CartesianGrid strokeDasharray="3 3" />
